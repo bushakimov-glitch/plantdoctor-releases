@@ -9,7 +9,7 @@
 
 ## Установка (Android)
 
-1. Скачайте файл **PlantDoctor-1.2.2-release.apk** (кнопка *Download* на
+1. Скачайте файл **PlantDoctor-1.2.3-release.apk** (кнопка *Download* на
    [странице релиза](https://github.com/bushakimov-glitch/plantdoctor-releases/releases)).
 2. Откройте скачанный файл. Android попросит разрешить «установку неизвестных
    приложений» для вашего браузера/файлового менеджера — разрешите.
@@ -17,7 +17,15 @@
 4. При первом запуске разрешите доступ к камере и уведомлениям
    (напоминания об уходе). Всё остальное работает офлайн.
 
-## Что в 1.2.2
+## Что в 1.2.3
+
+- Исправлена типографика: часть экранов (приветствие, заголовки секций)
+  рисовалась моноширинным шрифтом вместо фирменного.
+- Исправлены обрезки длинных строк в Настройках и списке видов (Симптомы).
+- Всё остальное — без изменений: офлайн-диагностика, 3 языка, база знаний
+  с локализацией (ru/kk/en), политика конфиденциальности.
+
+### Что было в 1.2.2
 
 - Локализация базы знаний (уход + лечение) на английский и казахский.
 - Оговорка о точности по вредителям + симптомная диагностика.
@@ -31,8 +39,8 @@
 
 | Файл | Назначение | SHA-256 |
 |---|---|---|
-| PlantDoctor-1.2.2-release.apk | установка на устройство | EC59D46C74AD7D91262B7FCB2BDE21E6096B32C0FB8AC70A48D4BCC0A2C385FC |
-| PlantDoctor-1.2.2-release.aab | только для Google Play (не для установки) | 300C826B40769BACF92845D5F907B03A5EF3AFA6BAC4F75E402658AFBFEC95F5 |
+| PlantDoctor-1.2.3-release.apk | установка на устройство | A8AD14B41A099318D2E8B2EAF31D6B505EAA2551B1F04576287990B78B19F162 |
+| PlantDoctor-1.2.3-release.aab | только для Google Play (не для установки) | 613639EF0B1EF57EFC13EB0876B1FF99EACC66C33ECBA4A1FF12C3DEC1B60C41 |
 
 Подпись: собственный release-keystore (CN=PlantDoctor, срок действия до 2054) —
 обновления будут устанавливаться поверх без переустановки.
@@ -50,7 +58,7 @@
 
 ## Орнату (Android)
 
-1. **PlantDoctor-1.2.2-release.apk** файлын жүктеп алыңыз.
+1. **PlantDoctor-1.2.3-release.apk** файлын жүктеп алыңыз.
 2. Файлды ашыңыз. Android «белгісіз қосымшаларды орнатуға» рұқсат сұрайды —
    рұқсат етіңіз.
 3. Орнату аяқталғаннан кейін қосымшаны іске қосыңыз.
@@ -73,7 +81,7 @@ Photos never leave your phone — no servers, accounts or subscriptions.
 
 ## Install (Android)
 
-1. Download **PlantDoctor-1.2.2-release.apk** (*Download* button on the
+1. Download **PlantDoctor-1.2.3-release.apk** (*Download* button on the
    [release page](https://github.com/bushakimov-glitch/plantdoctor-releases/releases)).
 2. Open the downloaded file. Android will ask to allow "install unknown
    apps" for your browser/file manager — allow it.
