@@ -9,7 +9,7 @@
 
 ## Установка (Android)
 
-1. Скачайте файл **PlantDoctor-1.2.3-release.apk** (кнопка *Download* на
+1. Скачайте файл **PlantDoctor-2.0.0-release.apk** (кнопка *Download* на
    [странице релиза](https://github.com/bushakimov-glitch/plantdoctor-releases/releases)).
 2. Откройте скачанный файл. Android попросит разрешить «установку неизвестных
    приложений» для вашего браузера/файлового менеджера — разрешите.
@@ -17,7 +17,24 @@
 4. При первом запуске разрешите доступ к камере и уведомлениям
    (напоминания об уходе). Всё остальное работает офлайн.
 
-## Что в 1.2.3
+## Что в 2.0.0 — Умный дом
+
+- **Умный дом (по желанию, локально):** приложение подключается к вашему
+  MQTT-брокеру (Mosquitto / Home Assistant / любой локальный) и показывает
+  телеметрию датчиков — влажность почвы, температура, влажность воздуха, свет.
+  Камера прослеживания (ESP32-CAM) — отдельное устройство: авто-снимки
+  растения → офлайн-AI → таймлайн в карточке растения.
+- **Демо без железа:** в настройках есть встроенный симулятор датчиков, а
+  `tools/demo_node.py` из репозитория поднимает виртуальный узел
+  (брокер + датчик + камера) одним Python-процессом.
+- **Home Assistant:** узел датчика появляется через MQTT-автообнаружение,
+  AI-алерты приложения — на `plantdoctor/alerts/<plantId>`.
+- **Важно про сеть:** модуль выключен по умолчанию и общается ТОЛЬКО с
+  устройствами в вашей локальной сети (Wi-Fi). В интернете приложение
+  не ходит; политики обновлена (раздел «Умный дом и локальная сеть»).
+- Подробности по железу: `docs/HARDWARE.md` в репозитории.
+
+### Что было в 2.0.0 без умного дома — 1.2.3
 
 - Исправлена типографика: часть экранов (приветствие, заголовки секций)
   рисовалась моноширинным шрифтом вместо фирменного.
@@ -39,8 +56,8 @@
 
 | Файл | Назначение | SHA-256 |
 |---|---|---|
-| PlantDoctor-1.2.3-release.apk | установка на устройство | A8AD14B41A099318D2E8B2EAF31D6B505EAA2551B1F04576287990B78B19F162 |
-| PlantDoctor-1.2.3-release.aab | только для Google Play (не для установки) | 613639EF0B1EF57EFC13EB0876B1FF99EACC66C33ECBA4A1FF12C3DEC1B60C41 |
+| PlantDoctor-2.0.0-release.apk | установка на устройство | 7C8F3E481B2997907A4F74B734C6C49CA67FDEA16FFA5E35AA8784441530A052 |
+| PlantDoctor-2.0.0-release.aab | только для Google Play (не для установки) | 3E9BBC4571C7499E9C4E62BB2ABCCDB2A2B72F20014C131160CBBB7B18F8E71C |
 
 Подпись: собственный release-keystore (CN=PlantDoctor, срок действия до 2054) —
 обновления будут устанавливаться поверх без переустановки.
@@ -58,7 +75,7 @@
 
 ## Орнату (Android)
 
-1. **PlantDoctor-1.2.3-release.apk** файлын жүктеп алыңыз.
+1. **PlantDoctor-2.0.0-release.apk** файлын жүктеп алыңыз.
 2. Файлды ашыңыз. Android «белгісіз қосымшаларды орнатуға» рұқсат сұрайды —
    рұқсат етіңіз.
 3. Орнату аяқталғаннан кейін қосымшаны іске қосыңыз.
@@ -81,7 +98,7 @@ Photos never leave your phone — no servers, accounts or subscriptions.
 
 ## Install (Android)
 
-1. Download **PlantDoctor-1.2.3-release.apk** (*Download* button on the
+1. Download **PlantDoctor-2.0.0-release.apk** (*Download* button on the
    [release page](https://github.com/bushakimov-glitch/plantdoctor-releases/releases)).
 2. Open the downloaded file. Android will ask to allow "install unknown
    apps" for your browser/file manager — allow it.
